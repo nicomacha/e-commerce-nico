@@ -1,6 +1,6 @@
 import { CardProduct } from './modules/core/components/card-product.component';
 import { TitleText } from './modules/core/components/tittle-text';
-import { LayoutBase } from './modules/features/layout/layout-base.component';
+import { LayoutBase } from './modules/core/components/layout/layout-base.component';
 
 function App() {
   return (

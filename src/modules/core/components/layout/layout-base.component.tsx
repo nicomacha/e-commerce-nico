@@ -1,5 +1,5 @@
-import { BarTop } from '../../core/components/bar-top.component';
-import { Header } from '../../core/components/header.component';
+import { BarTop } from '../bar-top.component';
+import { Header } from '../header.component';
 
 interface LayoutBase {
   children: JSX.Element | React.ReactNode;
