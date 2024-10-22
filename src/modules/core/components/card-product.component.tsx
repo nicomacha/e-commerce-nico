@@ -30,10 +30,10 @@ export const CardProduct = ({
       <CardActionArea>
         <CardMedia component='img' height='298' image={image} alt={title} />
         <CardContent>
-          <Typography gutterBottom variant='h5' component='div' fontSize={20}>
+          <Typography gutterBottom variant='h5' component='h3' fontSize={20}>
             {title}
           </Typography>
-          <Typography gutterBottom variant='h5' component='div' fontSize={20}>
+          <Typography gutterBottom variant='h5' component='h4' fontSize={20}>
             ${price}
           </Typography>
           <Rating name='read-only' value={rating} readOnly />
