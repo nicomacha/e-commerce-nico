@@ -1,12 +1,16 @@
-import { BarTop } from './modules/core/components/bar-top.component';
-import { Header } from './modules/core/components/header.component';
+import { CardProduct } from "./modules/core/components/card-product.component";
+import { TittleText } from "./modules/core/components/tittle-text";
+import { LayoutBase } from "./modules/features/layout/layout-base.component";
 
 function App() {
   return (
-    <div>
-      <BarTop text='Sign up and get 20% off to your first order. Sign Up Now' />
-      <Header />
-    </div>
+    <LayoutBase>
+      <div>
+        <TittleText tittle="NUEVOS INGRESOS" />
+        <CardProduct />
+        <TittleText tittle="dasfasdf" />
+      </div>
+    </LayoutBase>
   );
 }
 
