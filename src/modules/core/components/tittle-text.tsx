@@ -1,12 +1,12 @@
-import styled from "styled-components";
-interface TittleText {
+import { styled } from '@mui/material';
+interface TitleText {
   tittle: string;
 }
-export const TittleText = ({ tittle }: TittleText) => {
-  return <TextPrinc>{tittle}</TextPrinc>;
+export const TitleText = ({ tittle }: TitleText) => {
+  return <Text>{tittle}</Text>;
 };
 
-const TextPrinc = styled("h2")({
-  display: "flex",
-  justifyContent: "center",
+const Text = styled('h2')({
+  display: 'flex',
+  justifyContent: 'center',
 });

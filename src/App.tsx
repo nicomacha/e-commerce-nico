@@ -1,14 +1,21 @@
-import { CardProduct } from "./modules/core/components/card-product.component";
-import { TittleText } from "./modules/core/components/tittle-text";
-import { LayoutBase } from "./modules/features/layout/layout-base.component";
+import { CardProduct } from './modules/core/components/card-product.component';
+import { TitleText } from './modules/core/components/tittle-text';
+import { LayoutBase } from './modules/features/layout/layout-base.component';
 
 function App() {
   return (
     <LayoutBase>
       <div>
-        <TittleText tittle="NUEVOS INGRESOS" />
-        <CardProduct />
-        <TittleText tittle="dasfasdf" />
+        <TitleText tittle='NUEVOS INGRESOS' />
+        <CardProduct
+          cta={() => {}}
+          image={''}
+          title='Remera God Maradona'
+          price={123}
+          rating={3}
+        />
+
+        <TitleText tittle='dasfasdf' />
       </div>
     </LayoutBase>
   );
