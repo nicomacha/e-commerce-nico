@@ -19,9 +19,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    /* Paths */
+    "baseUrl": "./", // Define la base desde donde se resuelven las rutas
     "paths": {
-      "@/*": ["./src/*"],
-      "@/modules/*": ["./src/modules/*"]
+      "@/src/*": ["src/*"],
+      "@/core/*": ["src/modules/core/*"],
+      "@/features/*": ["src/modules/features/*"]
     }
   },
   "include": ["src"]

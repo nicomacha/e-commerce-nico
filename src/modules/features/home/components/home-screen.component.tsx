@@ -1,35 +1,34 @@
-import { styled } from "@mui/material";
-import { CardProduct } from "../../../core/components/card-product.component";
-import { TitleText } from "../../../core/components/tittle-text";
-import { products } from "../../../db/index";
+import { styled } from '@mui/material';
+
+import { TitleText } from '@/src/modules/core/components/tittle-text';
+import { CardProduct } from '@/src/modules/core/components/card-product.component';
+
+import { products } from '../../../db/index';
 
 export const HomeScreen = () => {
   return (
     <div>
-      <TitleText tittle="NUEVOS INGRESOS" />
+      <TitleText tittle='NUEVOS INGRESOS' />
       <ContenedorProductos>
-        {products.map(({ id, image, title, price, rating }) => {
+        {products.map((objetoEntero) => {
           return (
             <CardProduct
-              key={id}
+              key={objetoEntero.id}
               cta={() => {}}
-              image={image}
-              title={title}
-              price={price}
-              rating={rating}
+              {...objetoEntero}
             />
           );
         })}
       </ContenedorProductos>
 
-      <TitleText tittle="dasfasdf" />
+      <TitleText tittle='dasfasdf' />
     </div>
   );
 };
 
-const ContenedorProductos = styled("div")({
-  display: "flex",
-  justifyContent: "center",
+const ContenedorProductos = styled('div')({
+  display: 'flex',
+  justifyContent: 'center',
   gap: 20,
   margin: 30,
 });
